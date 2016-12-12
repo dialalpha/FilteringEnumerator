@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilteringEnumerator", "FilteringEnumerator\FilteringEnumerator.csproj", "{FF1DB842-E5A7-4E6F-B95F-4FE49285F744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{2E9BD94D-E437-4C77-AF4B-993BCD52D232}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF1DB842-E5A7-4E6F-B95F-4FE49285F744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1DB842-E5A7-4E6F-B95F-4FE49285F744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1DB842-E5A7-4E6F-B95F-4FE49285F744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1DB842-E5A7-4E6F-B95F-4FE49285F744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9BD94D-E437-4C77-AF4B-993BCD52D232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9BD94D-E437-4C77-AF4B-993BCD52D232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9BD94D-E437-4C77-AF4B-993BCD52D232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9BD94D-E437-4C77-AF4B-993BCD52D232}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
