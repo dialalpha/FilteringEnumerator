@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace FilteringEnumerator
@@ -6,19 +7,24 @@ namespace FilteringEnumerator
     public sealed class FilteringEnumerator<T> : IEnumerator<T>
     {
         private readonly IEnumerator<T> _internalEnumerator;
-        private readonly IObjectTest<T> _filterFunc;
+        private readonly IObjectTest<T> _filter;
 
         public FilteringEnumerator(IEnumerator<T> enumerator, IObjectTest<T> filter )
         {
+            if (enumerator == null || filter == null)
+            {
+                throw new ArgumentNullException(enumerator == null ? nameof(enumerator) : nameof(filter));
+            }
+
             _internalEnumerator = enumerator;
-            _filterFunc = filter;
+            _filter = filter;
         }
 
         public bool MoveNext()
         {
             while (_internalEnumerator.MoveNext())
             {
-                if (_filterFunc.Test(_internalEnumerator.Current))
+                if (_filter.Test(_internalEnumerator.Current))
                 {
                     return true;
                 }
